@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>InstantCafé</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="src/components/header.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="src/components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="src/components/button-fixed.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <header-component></header-component>
+  <body>
+    <button-fixed></button-fixed>
+    <main>
+      <article>
+        <h2>Bienvenue sur mon Blog</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eos iste rem dolore a ab. Eum blanditiis tempore ipsa voluptate!
+        </p>
+        <h3>La suite soon ! ;)</h3>
+      </article>
+      <aside>
+        <img class="imgBlog" src="https://picsum.photos/200/300" alt="image-blog">
+      </aside>
+    </main>
+  </body>
+  <footer-component></footer-component>
+  <script>
+    function monBoutonClic() {
+      alert("Attention, vous allez être renvoyé vers une autre page !");
+      console.log("redirection réussi !");
+    }
+  </script>
+</html>

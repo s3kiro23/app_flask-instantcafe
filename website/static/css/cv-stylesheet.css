@@ -1,0 +1,108 @@
+body {
+	font-family: Cambria;
+	font-size: 12px;
+	background: white;
+  	display: block;
+  	margin: 0 auto;
+  	margin-bottom: 0.5cm;
+  	box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  	width: 21cm;
+  	height: 29.7cm;
+  	border-radius: 5px
+}
+
+#header {
+	padding-top: 20px;
+}
+
+span {
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+    margin-top: -52px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* Correspond à chaque partie du CV */
+.sections {
+	padding: 15px 0px 0px 39px;
+}
+
+h3 {
+	font-weight: bold;
+	text-align: left;
+}
+
+table {
+	border-left: 1px solid #B0E0E6;
+	margin-left: 40px;
+	margin-right: 50px;
+}
+
+p {
+	color: grey;
+	text-align: justify;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+#date1 {
+	padding-right: 25px;
+	padding-left: 10px;
+	white-space: nowrap;
+	font-style: italic;
+}
+
+#date2 {
+	padding-right: 142px;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+img {
+	height: 60px;
+	width: 60px
+}
+
+/* espacement Logo win pour centrage */
+.fenetre {
+	margin-left: 30px;
+}
+
+/*espacement cellules image*/
+#cell3 {
+	padding-right: 42px;
+	padding-left: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.lienpostes:hover {
+	color: blue;
+	font-style: italic;
+}
+
+.lienform:hover {
+	color: blue;
+	font-weight: bold;
+}
+
+.decalopen {
+	padding-left: 40px;
+}
+
+#mail {
+	color: blue;
+}
+
+#mail:hover {
+	font-weight: bold;
+}

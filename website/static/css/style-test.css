@@ -1,0 +1,151 @@
+.main-container {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: lightcyan;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-title {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  transition: all 0.3s ease-in 50ms;
+  color: white;
+}
+
+.title:hover {
+  color: #70e8b0e3;
+}
+
+.asterix:hover{
+  color: red;
+}
+
+.input-container {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-radio{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: lightpink;
+}
+
+.radio {
+
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  background-color: lightsalmon;
+  gap: 15px;
+}
+
+.form-label {
+  position: relative;
+  display: block;
+  clear: both;
+  max-width: 200px;
+}
+
+.form-label input{
+  display:block;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+  font-family: sans-serif;
+  font-size: 1em;
+  margin-right: 0;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%;
+}
+
+.label {
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(50%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 60%;
+  left: 0.5em;
+  background:none;
+  color: #b3b3b3;
+  font-weight: normal;
+  cursor: text;
+  pointer-events: none;
+  font-family: sans-serif;
+}
+
+input:focus~label,
+input.hascontent~label{
+    bottom: -30%;
+    font-size: .8em;
+    padding: 0 .3em;
+    background:#F9F9F9;
+}
+
+.required-conditions{
+  font-style: italic;
+}
+
+.required-conditions::before{
+  content: "*";
+  color: red;
+}
+
+/* .civilite {
+  display: flex;
+} */
+
+/* input {
+  display: block;
+  width: 100%;
+  height: 1em;
+  padding: 8px 8px;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  background: rgba(255,255,255,0.97);
+  color: #212121;
+  outline: 0;
+  appearance: none;
+  transition: top 0.2s ease-in-out;
+}
+
+label {
+  color: red;
+}
+
+label:hover{
+  color: #212121;
+  transition: top .7s ease;
+  top: 20px;
+} */

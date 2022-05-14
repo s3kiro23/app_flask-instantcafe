@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>À Propos</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="src/components/header.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="src/components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="src/components/button-fixed.js"
+      type="text/javascript"
+      defer
+    ></script>
+  </head>
+  <header-component></header-component>
+  <body>
+    <button-fixed></button-fixed>
+    <main>
+      <article>
+        <h2>Page À Propos</h2>
+      </article>
+    </main>
+    <footer-component></footer-component>
+  </body>
+
+  <script>
+    function monBoutonClic() {
+      alert("Attention, vous allez être renvoyé vers une autre page !");
+      console.log("redirection réussi !");
+    }
+  </script>
+</html>

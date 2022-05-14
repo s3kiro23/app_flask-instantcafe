@@ -1,0 +1,144 @@
+{% extends "base.html" %} {% block title %} Contact {% endblock %} {% block
+content %}
+
+    <main>
+      <article>
+        <h2>Page de Contact</h2>
+        <table style="border-spacing: 10px">
+          <tr>
+            <td colspan="3">
+              Tous les champs contenant un astérisque (<span style="color: red"
+                >*</span
+              >) sont obligatoire.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Mr">Mr</label>
+              <input
+                class="styleInput"
+                type="radio"
+                name="Genre"
+                id="Mr"
+                checked
+              />
+            </td>
+            <td>
+              <label for="Mme">Mme</label>
+              <input class="styleInput" type="radio" name="Genre" id="Mme" />
+            </td>
+            <td>
+              <label for="Mlle">Mlle</label>
+              <input class="styleInput" type="radio" name="Genre" id="Mlle" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label class="label" for="nom">Nom :</label>
+            </td>
+            <td>
+              <input
+                class="styleInput required"
+                type="text"
+                name="nom"
+                id="nom"
+                placeholder="Votre Nom *"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label class="label" for="prénom">Prénom :</label>
+            </td>
+            <td>
+              <input
+                class="styleInput required"
+                type="text"
+                name="Prénom"
+                id="Prénom"
+                placeholder="Votre prénom *"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="date"> Date de naissance :</label>
+            </td>
+            <td>
+              <input class="styleInput" type="date" name="date" id="date" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label class="label" for="mail"> Mail :</label>
+            </td>
+            <td>
+              <input
+                class="styleInput required"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Votre adresse mail *"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label class="label" for="subject">Sujet du message :</label>
+            </td>
+            <td>
+              <input
+                class="styleInput required"
+                type="text"
+                name="sub"
+                id="subject"
+                placeholder="Indiquer un sujet *"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label class="label" for="subject">Message :</label>
+            </td>
+            <td>
+              <textarea
+                name="message"
+                id="message"
+                cols="40"
+                rows="10"
+                placeholder="Saisissez votre message ici *"
+              ></textarea>
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td colspan="3">
+              <label class="required-conditions" for="conditions"
+                ><i>
+                  Veuillez accepter les CGU
+                  de notre site pour pouvoir déposer un message</i
+                >
+              </label>
+              <input
+                class="styleInput"
+                type="checkbox"
+                name="conditions"
+                id="conditions"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <button>Soumettre</button>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </main>
+
+{% endblock %}

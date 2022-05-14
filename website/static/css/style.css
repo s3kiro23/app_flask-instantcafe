@@ -1,0 +1,468 @@
+/* || Layout main */
+
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+}
+
+html {
+  font-size: 10px;
+  background-color: #22282f;
+}
+
+body {
+  width: 70%;
+  margin: 0 auto;
+  height: 200vh;
+}
+
+/* || Typo */
+
+html,
+body {
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #2a2a2a;
+}
+
+p,
+li {
+  color: #2a2a2a;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+article,
+aside,
+footer {
+  background-color: white;
+  padding: 1%;
+  margin: 1px;
+}
+
+
+/* || Layout Top-panel */
+
+#top-header {
+    height: 15px;
+}
+
+#top-panel {
+  background-color: #22282f;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logos {
+  width: 140px;
+}
+
+#logos li {
+  padding-right: 10px;
+  padding-top: 5px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+#logos ul {
+  margin: 0;
+  padding: 0;
+}
+
+#login {
+  background-color: #22282f;
+  font-size: 13px;
+  width: 200px;
+}
+
+#login ul {
+  display: flex;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+
+#login li {
+  list-style-type: none;
+}
+
+#login a {
+  text-decoration: none;
+  color: #8998b0;
+  letter-spacing: 1px;
+}
+
+#ins {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* || Layout Header */
+
+header {
+  background-color: #2a313c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+header div {
+  display: flex;
+}
+
+header h1 {
+  margin-left: 15px;
+
+}
+
+/* .header-title{
+transition: 0.3s ease-in 50ms;
+box-shadow: 10px 5px 5px #70e8b0;
+
+} */
+
+/* .header-title__link:hover{
+} */
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+  margin-top: 45px;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 25px;
+}
+
+input[type="search"] {
+/* flex: 3; */
+margin-left: 65%;
+}
+
+input ~ span {
+  transition: top 0.7s ease;
+  position: absolute;
+}
+
+input[type="submit"] {
+  margin-left: 1rem;
+  background-color: #333;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+/* || Layout NavBar */
+
+nav {
+  position: sticky;
+  top: 0px;
+  height: 50px;
+  background-color: #23282f;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  margin: 0px;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+  margin: 0px;
+  border: 1px solid black;
+}
+
+nav a {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ececec;
+  justify-content: center;
+  margin: 0px;
+  padding-bottom: 13px;
+  padding-top: 14px;
+  border-bottom: 2px solid #323b47;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #70e8b0;
+  background-color: #323b47;
+}
+
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* || Layout listes déroulantes */
+
+.sous {
+  display: none;
+  background-color: #323b47;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sous li {
+  width: 99%;
+  text-align: left;
+}
+
+nav > ul li:hover .sous {
+  display: block;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+
+.sous a {
+  border-bottom: none;
+  display: flex;
+  text-transform: none;
+}
+
+.sous a:hover {
+  border-bottom: none;
+  background-color: #70e8b0e3;
+}
+
+/* || Layout main */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: #dedede;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+aside a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.styleInput {
+  height: auto;
+  font-size: 13px;
+}
+
+table {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.boutonBack {
+  border-color: red;
+  display: inline;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+}
+
+.boutonBack img {
+  width: 30px;
+}
+
+.imgBlog {
+  width: 300px;
+}
+
+.footer-right {
+  display: block;
+}
+
+/* Layout form */
+
+.required-conditions::before {
+  content: "*";
+  color: red;
+}
+
+/* || Layout footer */
+
+.footer-main {
+  background-color: #2a313c;
+  margin-top: 10px;
+  height: 100px;
+  display: flex;
+  gap:100px;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: space-around;
+}
+
+.footer-copyright p{
+  color: white;
+}
+
+/* .footer-pages{
+} */
+
+.footer-pages__list{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-pages__link{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in 50ms;
+}
+
+.footer-pages__link:hover{
+  color: #70e8b0;
+}
+
+/* .footer-socials{
+} */
+
+.footer-socials__list{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials__link{
+  display: flex;
+}
+
+.footer-socials__link img{
+  width: 25px;
+  height: 25px;
+  transition: 0.3s ease-in 50ms;
+}
+
+.footer-socials__link img:hover{
+  background-color: #70e8b0;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+
+/* || Layout Bouton Pulse */
+
+.container {
+  width: 100px;
+  height: 100%;
+  margin: 0 auto 0;
+  position: fixed;
+  right: 1%;
+  top: 55%;
+
+}
+
+.pulse-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(234, 220, 220, 0.7);
+  border-radius: 50%;
+  background-color: #70e8b0e3;
+  background-image: url(/assets/img/headset-solid.png);
+  background-size: 40px;
+  background-position: 10px 9px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+@-moz-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+@-ms-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
